@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="buy_provider" />
+        <module name="buy_pojo" />
+        <module name="buy_commons" />
+        <module name="buy_passport" />
+        <module name="buy_redis" />
+        <module name="buy_web" />
+        <module name="buy_api" />
+        <module name="buy_mapper" />
+        <module name="buy_rabbitmq_send" />
+        <module name="buy_rabbitmq_receive" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="buy_api" options="-parameters" />
+      <module name="buy_commons" options="-parameters" />
+      <module name="buy_mapper" options="-parameters" />
+      <module name="buy_passport" options="-parameters" />
+      <module name="buy_pojo" options="-parameters" />
+      <module name="buy_provider" options="-parameters" />
+      <module name="buy_rabbitmq_receive" options="-parameters" />
+      <module name="buy_rabbitmq_send" options="-parameters" />
+      <module name="buy_redis" options="-parameters" />
+      <module name="buy_web" options="-parameters" />
+    </option>
+  </component>
+</project>

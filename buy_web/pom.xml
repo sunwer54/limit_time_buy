@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>limit_time_buy</artifactId>
+        <groupId>com.buy</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>buy_web</artifactId>
+    <dependencies>
+        <dependency>
+            <artifactId>buy_api</artifactId>
+            <groupId>com.buy</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>buy_commons</artifactId>
+            <groupId>com.buy</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>buy_redis</artifactId>
+            <groupId>com.buy</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- Spring Session 分布式事务 ，在登录时使用 -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <version>${spring-session-version}</version>
+        </dependency>
+        <!-- spring-session -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-core</artifactId>
+            <version>${spring-session-version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

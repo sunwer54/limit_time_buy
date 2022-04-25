@@ -1,0 +1,19 @@
+#当前服务端口
+server:
+  port: 8081
+spring:
+  profiles:
+    active: redis
+  #视图解析器
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .html
+  #当前服务器名称
+  application:
+    name: web-service
+  cloud:
+    #nacos配置中心
+    nacos:
+      discovery:
+        server-addr: localhost:8848

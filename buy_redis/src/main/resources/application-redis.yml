@@ -1,0 +1,5 @@
+spring:
+  redis:
+    host: 192.168.175.131
+    port: 6379
+    password: 123456  #redis来自docker容器时需要配置访问密码
