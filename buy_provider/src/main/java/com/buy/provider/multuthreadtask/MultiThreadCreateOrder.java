@@ -75,6 +75,7 @@ public class MultiThreadCreateOrder {
             String s = JSON.toJSONString(seckillStatus);
             sender.sendMessage(s);
             System.out.println("发送消息到过期队列成功");
+
         }
     }
 }
